@@ -1,9 +1,6 @@
 # WebSQL
 Web SQL Demo
-<!DOCTYPE html>
-<html>
-<head>
-<title></title>
+
 <script type="text/javascript">
 var db = openDatabase('rkdb','1.0','rkfirstdb','2*1024*1024');
 db.transaction(function(tx){
@@ -11,8 +8,4 @@ db.transaction(function(tx){
 	tx.executeSql("INSERT INTO user(id,name) VALUES(1,'Ranjit kumar')");
 });
 </script>
-</head>
-<body>
-<h3>web sql database demo</h3>
-</body>
-</html>
+
